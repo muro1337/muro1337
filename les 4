@@ -1,0 +1,14 @@
+в views.py:
+from django.http import HttpResponse
+
+def lesson_4(request):
+    return HttpResponse("Домашка по 4 занятию")
+
+в url.py:
+from django.urls import path
+from app_lesson_4.views import lesson_4
+
+urlpatterns = [
+    path('lesson_4', lesson_4, name='lesson_4'),
+]
+
