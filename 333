@@ -1,0 +1,11 @@
+в top-seller.html:
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Топ продаж</h1>
+<p>Здесь будет контент страницы "Топ продаж".</p>
+{% endblock %}
+
+<a href="{% url 'имя_представления' %}">Ссылка</a>
+
+<a href="{% url 'index' %}">На главную</a>
